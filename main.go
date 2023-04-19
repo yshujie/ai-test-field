@@ -2,6 +2,7 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
+	familiarisation "github.com/yshujie/family-doctor-gpt"
 )
 
 func main() {
@@ -11,7 +12,7 @@ func main() {
 
 	// 设置 GET 路由
 	r.GET("/", func(c *gin.Context) {
-		c.JSON(200, gin.H{"message": "Hello World"})
+		c.JSON(200, gin.H{"message": familiarisation.Hello()})
 	})
 
 	// 启动 HTTP 服务
