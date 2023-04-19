@@ -1,4 +1,4 @@
-module github.com/ai-test-field
+module github.com/yshujie/ai-test-field
 
 go 1.19
 
